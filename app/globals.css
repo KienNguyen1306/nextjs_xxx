@@ -2,6 +2,15 @@
 @tailwind components;
 @tailwind utilities;
 
+
+/* 
+.line-clamp-2 {
+  display: -webkit-box;
+  -webkit-line-clamp: var(--line-clamp, 1);
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+} */
+
 :root {
   --background: #ffffff;
   --foreground: #171717;
@@ -25,3 +34,135 @@ body {
     text-wrap: balance;
   }
 }
+.icon_view{
+  width: 18px;
+  margin-right: 5px;
+  color: #fff;
+}
+
+.image_s{
+  width: 100% !important;
+  object-fit: contain;
+}
+.absolute_count{
+  top: -10px;
+  right: 0;
+  font-size: 14px;
+  font-weight: bold;
+  background-color: red;
+  color: #fff;
+  min-width: 20px;
+  height: 20px;
+  border-radius: 99999999999999px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.responsive-iframe {
+  position: relative;
+  overflow: hidden;
+  padding-top: 56.25%; /* 16:9 Aspect Ratio */
+}
+@media (min-width: 768px) { 
+  .responsive-iframe {
+    padding-top: 32.25%; /* 16:9 Aspect Ratio */
+  }
+ }
+.responsive-iframe iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border: 0;
+}
+
+.search{
+  width: max-content;
+}
+.input_search{
+  flex: 1;
+  width: 100%;
+}
+
+.cards {
+  display: flex;
+  flex: 1;
+}
+
+.card {
+  margin: 10px;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+
+  .image {
+    img {
+      max-width: 100%;
+      border-top-left-radius: 5px;
+      border-top-right-radius: 5px;
+    }
+  }
+
+  .content {
+    padding: 10px 10px;
+  }
+}
+
+.card.is-loading {
+  .image,
+  h2,
+  p {
+    background: #eee;
+    background: linear-gradient(110deg, #ececec 8%, #f5f5f5 18%, #ececec 33%);
+    border-radius: 5px;
+    background-size: 200% 100%;
+    animation: 1.5s shine linear infinite;
+  }
+
+  .image {
+   
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+  }
+
+  h2 {
+    height: 30px;
+  }
+
+  p {
+    height: 70px;
+  }
+}
+
+@keyframes shine {
+  to {
+    background-position-x: -200%;
+  }
+}
+
+.reactPaginate{
+  gap: 0.25rem;
+}
+
+.reactPaginate li{
+  background-color: #27272a;
+  min-width: 36px;
+  height: 36px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0 8px;
+}
+.reactPaginate .active{
+  background-color: #006fee;
+  
+}
+/* .next{
+  display: none !important;
+}
+
+.previous {
+  display: none !important;
+} */
