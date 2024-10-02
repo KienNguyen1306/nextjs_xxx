@@ -14,8 +14,8 @@ function Header() {
   return (
     <header className="bg-gray-800 p-2 flex items-center justify-between flex-wrap">
       <Link href='/' className="text-2xl font-bold text-white">
-        <span className="text-yellow-400">FILMSEX</span>
-        HD.COM
+        <span className="text-yellow-400">SEX</span>
+        NEW.XYZ
       </Link>
       <div className="flex items-center mt-2 sm:mt-0">
         <input

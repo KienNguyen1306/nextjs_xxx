@@ -57,11 +57,11 @@ function Footer() {
                 href="/"
                 className="text-2xl font-bold mb-2 font-medium uppercase text-white"
               >
-                <span className="text-yellow-400">FILMSEX</span>
-                HD.COM
+                <span className="text-yellow-400">SEX</span>
+                NEW.XYZ
               </Link>
               <p className="mb-4 text-white text-sm		">
-                ILMSEXHD.COM là trang web phim sex chỉ dành cho các bạn trên 20
+                SEXNEW.XYZ là trang web phim sex chỉ dành cho các bạn trên 20
                 tuổi, xem phim JAV chỉ để giải trí, giải tỏa nhu cầu sinh lý,
                 không bắt chước theo phim, tránh vi phạm pháp luật.
               </p>
@@ -81,7 +81,7 @@ function Footer() {
         {/*Copyright section*/}
         <div className="w-full bg-black/5 p-4 text-center text-white">
           © 2023 Copyright:
-          <a href="https://filsexhd.com/">FILMSEXHD</a>
+          <a href="https://sexnew.xyz/">SEXNEW.XYZ</a>
         </div>
       </footer>
     </>
